@@ -49,21 +49,21 @@ int main() {
 
             }
             else{
-                cout<<"\n\tonly "<<Qrooms-Srooms<<"Rooms remaing in hotel";
+                cout<<"\n\tonly "<<Qrooms-Srooms<<"Rooms remaing in hotel\n";
                 break;
             }
 
         case 2 :
-            cout<<"Enter the quantity of pasta you want :";
+            cout<<"Enter the quantity of pasta you want :\n";
             cin>>quant;
             if((Qpasta-Spasta) >= quant){
                 Spasta=Spasta+quant;
                 Total_pasta=Total_pasta+quant*250;
-                cout<<"\n\n\t\t"<<quant<<"pasta is the order";
+                cout<<"\n\n\t\t"<<quant<<"pasta is the order\n";
 
             }
             else{
-                cout<<"\n\tonly "<<Qpasta-Spasta<<"Pasta remaing in hotel";
+                cout<<"\n\tonly "<<Qpasta-Spasta<<"Pasta remaing in hotel\n";
                 break;
             }
 
@@ -116,7 +116,7 @@ int main() {
             cin>>quant;
             if((Qsabji-Ssabji) >= quant){
                 Ssabji=Ssabji+quant;
-                Total_sabji=Total_sabji+quant*379;
+                Total_sabji=Total_sabji+quant*250;
                 cout<<"\n\n\t\t"<<quant<<"sabji is the order";
 
             }
@@ -124,6 +124,51 @@ int main() {
                 cout<<"\n\tonly "<<Qsabji-Ssabji<<"Sabji remaing in hotel";
                 break;
             }
+
+            case 7 :
+                cout<<"\n\tDetails of sails and collection ";
+                cout<<"\n\n Number of rooms we had : "<<Qrooms;
+                cout<<"Number of rooms we gave for rent : "<<Srooms;
+                cout<<"Remaining Rooms : "<<Qrooms-Srooms;
+                cout<<"\n Total Rooms collection for the day : "<<Total_rooms;
+
+        
+                cout<<"\n\n Number of Pasta we had : "<<Qpasta;
+                cout<<"Number of pasta we sold : "<<Spasta;
+                cout<<"Remaining pasta : "<<Qpasta-Spasta;
+                cout<<"\n Total Pasta collection for the day : "<<Total_pasta;
+
+                
+                cout<<"\n\n Number of Burger we had : "<<Qburger;
+                cout<<"Number of Burger we sold : "<<Sburger;
+                cout<<"Remaining Burger : "<<Qburger-Sburger;
+                cout<<"\n Total Burger collection for the day : "<<Total_burger;
+
+                
+                cout<<"\n\n Number of Noodles we had : "<<Qnoodles;
+                cout<<"Number of Noodles we sold : "<<Snoodles;
+                cout<<"Remaining Noodles : "<<Qnoodles-Snoodles;
+                cout<<"\n Total Noodles collection for the day : "<<Total_noodles;
+
+                cout<<"\n\n Number of Roti we had : "<<Qroti;
+                cout<<"Number of Roti we sold : "<<Sroti;
+                cout<<"Remaining Roti : "<<Qroti-Sroti;
+                cout<<"\n Total Roti collection for the day : "<<Total_roti;
+
+                cout<<"\n\n Number of Sabji we had : "<<Qsabji;
+                cout<<"Number of Sabji we sold : "<<Ssabji;
+                cout<<"Remaining Sabji : "<<Qsabji-Ssabji;
+                cout<<"\n Total Sabji collection for the day : "<<Total_sabji;
+
+                case 8 :
+                    exit(0);
+
+                    default:
+                    cout<<"\n Please select the number mentioned above !";
+
+                
+                
+
     }
 
 
